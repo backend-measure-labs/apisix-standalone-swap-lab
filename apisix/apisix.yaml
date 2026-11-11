@@ -1,0 +1,16 @@
+# 배포 스크립트가 노드 줄을 바꾼다. 파일은 늘 제자리 쓰기(cat >)로 고친다
+# 운영과 같이 업스트림 객체를 upstream_id 로 참조하고 타임아웃을 같은 값으로 둔다
+routes:
+  - id: app
+    uri: /*
+    upstream_id: app
+upstreams:
+  - id: app
+    type: roundrobin
+    nodes:
+      "app:8080": 1
+    timeout:
+      connect: 3
+      read: 300
+      send: 300
+#END

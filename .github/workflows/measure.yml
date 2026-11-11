@@ -1,0 +1,66 @@
+name: measure
+
+on:
+  workflow_dispatch:
+    inputs:
+      reps:
+        description: 조합마다 회차 수
+        default: "5"
+
+jobs:
+  measure:
+    # 기준 운영 환경: x86_64 Ubuntu 24.04
+    runs-on: ubuntu-24.04
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Docker 29.2.0 / Compose v5.0.2 고정 설치
+        run: |
+          set -eux
+          sudo apt-get remove -y moby-engine moby-cli moby-buildx moby-compose moby-containerd moby-runc || true
+          sudo install -m 0755 -d /etc/apt/keyrings
+          curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor --yes -o /etc/apt/keyrings/docker.gpg
+          echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu noble stable" | sudo tee /etc/apt/sources.list.d/docker.list
+          sudo apt-get update
+          V=$(apt-cache madison docker-ce | awk '{print $3}' | grep '^5:29\.2\.0-' | head -n1)
+          C=$(apt-cache madison docker-compose-plugin | awk '{print $3}' | grep '^5\.0\.2-' | head -n1)
+          test -n "$V" && test -n "$C"
+          sudo apt-get install -y --allow-downgrades docker-ce="$V" docker-ce-cli="$V" containerd.io docker-buildx-plugin docker-compose-plugin="$C"
+          sudo systemctl restart docker
+          docker version --format '{{.Server.Version}}' | grep -x '29.2.0'
+          docker compose version --short | grep -x '5.0.2'
+          python3 -c 'import yaml' || sudo apt-get install -y python3-yaml
+
+      - name: docker-rollout v0.14 설치
+        run: |
+          mkdir -p ~/.docker/cli-plugins
+          curl -fsSL https://raw.githubusercontent.com/wowu/docker-rollout/v0.14/docker-rollout -o ~/.docker/cli-plugins/docker-rollout
+          chmod +x ~/.docker/cli-plugins/docker-rollout
+          docker rollout --version || true
+
+      - name: 이미지 준비와 환경 기록
+        run: |
+          set -eux
+          docker build -q -f Dockerfile.app -t lab-app:local .
+          docker pull -q apache/apisix:3.15.0-debian
+          docker pull -q alpine:3.20
+          mkdir -p results/raw
+          {
+            echo "kernel=$(uname -r)"; echo "arch=$(uname -m)"
+            grep PRETTY_NAME /etc/os-release
+            docker version; docker compose version; curl --version | head -n1
+            docker image inspect apache/apisix:3.15.0-debian --format 'apisix_digest={{index .RepoDigests 0}}'
+            echo "cpus=$(nproc)"; free -m
+          } > results/raw/env.txt 2>&1
+          cat results/raw/env.txt
+
+      - name: 측정
+        run: REPS="${{ inputs.reps }}" bash scripts/all.sh
+
+      - name: 결과 올리기
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: results
+          path: results/

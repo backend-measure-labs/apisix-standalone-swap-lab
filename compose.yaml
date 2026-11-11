@@ -1,0 +1,44 @@
+name: lab
+
+x-app: &app
+  image: lab-app:local
+  healthcheck:
+    test: ["CMD", "/app", "healthcheck"]
+    interval: 1s
+    timeout: 2s
+    retries: 3
+    start_period: 60s
+  restart: "no"
+  # 종료 수준이 정한다: 10s(기본값, 다운로드 20초보다 짧음) 또는 60s(다운로드보다 김)
+  stop_grace_period: ${STOP_GRACE:-10s}
+  environment:
+    VERSION: ${APP_VERSION:-v1}
+    STARTUP_DELAY: ${STARTUP_DELAY:-0}
+    SHUTDOWN: ${SHUTDOWN:-immediate}
+    GRACE_TIMEOUT: ${APP_GRACE:-8}
+
+services:
+  apisix:
+    image: apache/apisix:3.15.0-debian
+    volumes:
+      # 운영과 같은 단일 파일 바인드 마운트
+      - ./apisix/config.yaml:/usr/local/apisix/conf/config.yaml:ro
+      - ./apisix/apisix.yaml:/usr/local/apisix/conf/apisix.yaml:ro
+    ports:
+      - "127.0.0.1:9080:9080"
+
+  # C0 · C1 이 쓰는 서비스. C1 이 2개로 늘리므로 container_name · ports 를 두지 않는다
+  app:
+    <<: *app
+
+  # C2 의 색 서비스. 평소에는 하나만 떠 있다
+  app_blue:
+    <<: *app
+  app_green:
+    <<: *app
+
+  # 사전 관측용 DNS 조회 컨테이너
+  dnsutil:
+    image: alpine:3.20
+    command: ["sh", "-c", "apk add --no-cache bind-tools >/dev/null && sleep infinity"]
+    profiles: ["observe"]
