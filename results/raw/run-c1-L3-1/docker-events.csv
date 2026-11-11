@@ -1,0 +1,314 @@
+1794387591271906727,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387591271979372,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387591308146535,exec_die,lab-app-1,<no value>
+1794387592309627950,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387592309686459,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387592345248024,exec_die,lab-app-1,<no value>
+1794387593346603767,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387593346665131,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387593382236964,exec_die,lab-app-1,<no value>
+1794387594383799645,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387594383866710,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387594420878222,exec_die,lab-app-1,<no value>
+1794387595421568705,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387595421658804,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387595456399975,exec_die,lab-app-1,<no value>
+1794387596457840349,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387596457894801,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387596493402734,exec_die,lab-app-1,<no value>
+1794387597494126740,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387597494186131,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387597529605378,exec_die,lab-app-1,<no value>
+1794387598530686712,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387598530725324,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387598567401238,exec_die,lab-app-1,<no value>
+1794387599568097874,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387599568128891,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387599605009197,exec_die,lab-app-1,<no value>
+1794387600605534622,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387600605621564,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387600640878683,exec_die,lab-app-1,<no value>
+1794387601641396735,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387601641445917,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387601678271541,exec_die,lab-app-1,<no value>
+1794387602679558818,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387602679607489,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387602714426264,exec_die,lab-app-1,<no value>
+1794387603715252297,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387603715359527,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387603752746200,exec_die,lab-app-1,<no value>
+1794387604754253591,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387604754295990,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387604792728421,exec_die,lab-app-1,<no value>
+1794387605793729473,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387605793774207,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387605830380404,exec_die,lab-app-1,<no value>
+1794387606831771188,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387606831811473,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387606870944246,exec_die,lab-app-1,<no value>
+1794387607871788484,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387607871835312,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387607908182483,exec_die,lab-app-1,<no value>
+1794387608909756011,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387608909788411,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387608949059444,exec_die,lab-app-1,<no value>
+1794387609950343441,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387609950403474,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387609986755554,exec_die,lab-app-1,<no value>
+1794387610987739643,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387610987808650,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387611023476553,exec_die,lab-app-1,<no value>
+1794387612024515143,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387612024578812,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387612061374998,exec_die,lab-app-1,<no value>
+1794387613061932171,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387613061979940,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387613098681370,exec_die,lab-app-1,<no value>
+1794387614099794270,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387614099842901,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387614136342815,exec_die,lab-app-1,<no value>
+1794387615137745967,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387615137778428,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387615173872855,exec_die,lab-app-1,<no value>
+1794387616174696084,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387616174729306,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387616212171209,exec_die,lab-app-1,<no value>
+1794387617212776230,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387617212823859,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387617250569801,exec_die,lab-app-1,<no value>
+1794387618252006757,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387618252059455,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387618287478553,exec_die,lab-app-1,<no value>
+1794387619288466608,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387619288501544,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387619326281249,exec_die,lab-app-1,<no value>
+1794387620327546625,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387620327594084,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387620361975531,exec_die,lab-app-1,<no value>
+1794387621109374099,create,lab-app-2,<no value>
+1794387621234290651,start,lab-app-2,<no value>
+1794387621362716788,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387621362768214,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387621400630483,exec_die,lab-app-1,<no value>
+1794387622401377982,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387622401416614,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387622436935004,exec_die,lab-app-1,<no value>
+1794387623438249503,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387623438302943,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387623475346483,exec_die,lab-app-1,<no value>
+1794387624476678443,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387624476769783,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387624514335978,exec_die,lab-app-1,<no value>
+1794387625515435136,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387625515480510,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387625551759792,exec_die,lab-app-1,<no value>
+1794387626235190549,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387626235222519,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387626271557376,exec_die,lab-app-2,<no value>
+1794387626271945812,health_status: healthy,lab-app-2,<no value>
+1794387626478203927,kill,lab-app-1,15
+1794387626552795029,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387626552850633,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387626589486864,exec_die,lab-app-1,<no value>
+1794387627272109360,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387627272224645,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387627307446886,exec_die,lab-app-2,<no value>
+1794387627590703569,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387627590753562,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387627626095854,exec_die,lab-app-1,<no value>
+1794387628308205726,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387628308284814,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387628346113961,exec_die,lab-app-2,<no value>
+1794387628627324424,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387628627386339,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387628664096205,exec_die,lab-app-1,<no value>
+1794387628664494880,health_status: unhealthy,lab-app-1,<no value>
+1794387629347556063,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387629347597992,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387629383459585,exec_die,lab-app-2,<no value>
+1794387629665531500,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387629665603965,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387629702230287,exec_die,lab-app-1,<no value>
+1794387630384703641,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387630384745168,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387630420995160,exec_die,lab-app-2,<no value>
+1794387630703124578,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387630703169973,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387630739303070,exec_die,lab-app-1,<no value>
+1794387631421773747,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387631421821676,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387631457448652,exec_die,lab-app-2,<no value>
+1794387631740230360,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387631740287196,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387631778850544,exec_die,lab-app-1,<no value>
+1794387632458160346,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387632458213846,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387632493670212,exec_die,lab-app-2,<no value>
+1794387632779694009,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387632779736178,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387632814201126,exec_die,lab-app-1,<no value>
+1794387633494897442,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387633494942636,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387633533247912,exec_die,lab-app-2,<no value>
+1794387633815232651,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387633815267476,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387633853462027,exec_die,lab-app-1,<no value>
+1794387634533828997,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387634533886885,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387634569386480,exec_die,lab-app-2,<no value>
+1794387634854601530,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387634854664477,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387634891843036,exec_die,lab-app-1,<no value>
+1794387635570728866,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387635570770394,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387635607174643,exec_die,lab-app-2,<no value>
+1794387635893316070,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387635893359652,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387635931240046,exec_die,lab-app-1,<no value>
+1794387636608088585,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387636608163254,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387636643598725,exec_die,lab-app-2,<no value>
+1794387636932698271,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387636932730672,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387636967788150,exec_die,lab-app-1,<no value>
+1794387637644660255,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387637644710258,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387637680871401,exec_die,lab-app-2,<no value>
+1794387637969212790,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387637969271740,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387638003335736,exec_die,lab-app-1,<no value>
+1794387638681666565,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387638681715486,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387638716921963,exec_die,lab-app-2,<no value>
+1794387639004505974,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387639004565455,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387639041236682,exec_die,lab-app-1,<no value>
+1794387639717708065,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387639717741948,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387639752852637,exec_die,lab-app-2,<no value>
+1794387640042323936,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387640042387565,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387640077683326,exec_die,lab-app-1,<no value>
+1794387640753753429,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387640753828135,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387640790952881,exec_die,lab-app-2,<no value>
+1794387641078360021,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387641078412358,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387641114655808,exec_die,lab-app-1,<no value>
+1794387641792339643,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387641792397842,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387641827226937,exec_die,lab-app-2,<no value>
+1794387642116090716,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387642116138195,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387642152032923,exec_die,lab-app-1,<no value>
+1794387642827660412,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387642827719412,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387642862707182,exec_die,lab-app-2,<no value>
+1794387643152598693,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387643152634650,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387643186892950,exec_die,lab-app-1,<no value>
+1794387643863839918,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387643863877598,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387643902305542,exec_die,lab-app-2,<no value>
+1794387644187995881,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387644188035005,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387644222722496,exec_die,lab-app-1,<no value>
+1794387644903110254,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387644903165878,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387644936961909,exec_die,lab-app-2,<no value>
+1794387645223196403,exec_create: /app healthcheck,lab-app-1,<no value>
+1794387645223244152,exec_start: /app healthcheck,lab-app-1,<no value>
+1794387645257106883,exec_die,lab-app-1,<no value>
+1794387645937596366,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387645937632734,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387645973973002,exec_die,lab-app-2,<no value>
+1794387646283574502,stop,lab-app-1,<no value>
+1794387646284881985,die,lab-app-1,<no value>
+1794387646305806229,destroy,lab-app-1,<no value>
+1794387646974548384,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387646974643552,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387647009168457,exec_die,lab-app-2,<no value>
+1794387648010233164,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387648010307293,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387648046956592,exec_die,lab-app-2,<no value>
+1794387649047632559,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387649047676140,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387649081413645,exec_die,lab-app-2,<no value>
+1794387650082510533,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387650082586695,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387650116874187,exec_die,lab-app-2,<no value>
+1794387651118449858,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387651118494371,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387651154337300,exec_die,lab-app-2,<no value>
+1794387652155656131,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387652155693851,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387652191762430,exec_die,lab-app-2,<no value>
+1794387653192173214,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387653192217587,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387653228825525,exec_die,lab-app-2,<no value>
+1794387654229613455,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387654229654762,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387654265567290,exec_die,lab-app-2,<no value>
+1794387655266253240,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387655266295409,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387655301100267,exec_die,lab-app-2,<no value>
+1794387656302018496,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387656302066716,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387656337158876,exec_die,lab-app-2,<no value>
+1794387657338185318,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387657338227907,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387657373209378,exec_die,lab-app-2,<no value>
+1794387658373824037,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387658373880222,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387658410490624,exec_die,lab-app-2,<no value>
+1794387659412025950,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387659412074932,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387659446219449,exec_die,lab-app-2,<no value>
+1794387660447757664,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387660447801325,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387660482590319,exec_die,lab-app-2,<no value>
+1794387661483292303,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387661483330264,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387661517037654,exec_die,lab-app-2,<no value>
+1794387662517679040,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387662517736257,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387662553676041,exec_die,lab-app-2,<no value>
+1794387663554787967,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387663554850794,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387663590167556,exec_die,lab-app-2,<no value>
+1794387664591385061,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387664591435305,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387664626286350,exec_die,lab-app-2,<no value>
+1794387665627760259,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387665627815272,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387665662037131,exec_die,lab-app-2,<no value>
+1794387666663100235,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387666663140310,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387666697862674,exec_die,lab-app-2,<no value>
+1794387667698825001,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387667698876697,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387667733086365,exec_die,lab-app-2,<no value>
+1794387668733837537,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387668733911125,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387668768771218,exec_die,lab-app-2,<no value>
+1794387669770266999,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387669770302065,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387669804340362,exec_die,lab-app-2,<no value>
+1794387670805109978,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387670805154121,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387670840014785,exec_die,lab-app-2,<no value>
+1794387671841354736,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387671841401262,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387671875825092,exec_die,lab-app-2,<no value>
+1794387672876601710,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387672876662153,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387672913710401,exec_die,lab-app-2,<no value>
+1794387673914209608,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387673914288676,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387673953373721,exec_die,lab-app-2,<no value>
+1794387674954746160,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387674954780795,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387674989150523,exec_die,lab-app-2,<no value>
+1794387675990274045,exec_create: /app healthcheck,lab-app-2,<no value>
+1794387675990313158,exec_start: /app healthcheck,lab-app-2,<no value>
+1794387676027664954,exec_die,lab-app-2,<no value>

@@ -1,0 +1,2 @@
+mode=c0 shutdown=L3 name=run-c0-L3-2
+deploy_exit=0

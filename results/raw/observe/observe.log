@@ -1,0 +1,38 @@
+## P1 내장 DNS TTL
+app.			600	IN	A	172.18.0.2
+## P2 scale 2 일 때 서비스명 주소 수
+addresses=2
+app.			600	IN	A	172.18.0.5
+app.			600	IN	A	172.18.0.2
+## P3 새 컨테이너가 healthy 전에 DNS 에 나오는가 (기동 지연 5초)
+dns_two_addresses_at=0.5s healthy_at=5.2s (배포 명령 기준)
+## P4 같은 초 안의 두 번 쓰기 (blue→green→blue, 0.3초 간격). 최종이 v1 이어야 정상
+# 시도마다 초 경계에서 0.1초씩 늦게 시작해 1초 확인 타이머와의 위상을 바꾼다
+offset=0.0s final=v2
+offset=0.1s final=v2
+offset=0.2s final=v1
+offset=0.3s final=v1
+offset=0.4s final=v1
+offset=0.5s final=v1
+offset=0.6s final=v1
+offset=0.7s final=v1
+offset=0.8s final=v1
+offset=0.9s final=v1
+## P5 쓰기 방식별 반영 (blue→green, 5초 안에 v2 가 보이면 반영)
+inplace trial=1 reflected=yes
+inplace trial=2 reflected=yes
+inplace trial=3 reflected=yes
+inplace trial=4 reflected=yes
+inplace trial=5 reflected=yes
+rename trial=1 reflected=no
+rename trial=2 reflected=no
+rename trial=3 reflected=no
+rename trial=4 reflected=no
+rename trial=5 reflected=no
+## P6 노드를 바꿔도 옛 노드의 진행 중 다운로드가 끝나는가 (옛 컨테이너는 계속 실행)
+trial=1 result=200,10485760,0,v1 (http,bytes,exit,version; 완주는 200,10485760,0,v1)
+trial=2 result=200,10485760,0,v1 (http,bytes,exit,version; 완주는 200,10485760,0,v1)
+trial=3 result=200,10485760,0,v1 (http,bytes,exit,version; 완주는 200,10485760,0,v1)
+trial=4 result=200,10485760,0,v1 (http,bytes,exit,version; 완주는 200,10485760,0,v1)
+trial=5 result=200,10485760,0,v1 (http,bytes,exit,version; 완주는 200,10485760,0,v1)
+observe done

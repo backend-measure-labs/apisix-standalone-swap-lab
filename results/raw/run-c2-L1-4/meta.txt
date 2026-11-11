@@ -1,0 +1,3 @@
+mode=c2 shutdown=L1 name=run-c2-L1-4
+drain=done inflight_query_failures=0
+deploy_exit=0

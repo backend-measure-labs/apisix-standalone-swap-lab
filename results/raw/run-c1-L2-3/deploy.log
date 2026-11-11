@@ -1,0 +1,10 @@
+==> Scaling 'app' to '2' instances
+ Container lab-app-1 Running 
+ Container lab-app-2 Creating 
+ Container lab-app-2 Created 
+ Container lab-app-2 Starting 
+ Container lab-app-2 Started 
+==> Waiting for new containers to be healthy (timeout: 60 seconds)
+==> Stopping and removing old containers
+b914539e4de3bfc262041a61e802a12a7098af4ee6993002755d2351b3f02715
+b914539e4de3bfc262041a61e802a12a7098af4ee6993002755d2351b3f02715
