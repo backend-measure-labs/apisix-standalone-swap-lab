@@ -1,0 +1,379 @@
+1794382639597996258,exec_create: /app healthcheck,lab-app_blue-1
+1794382639598031641,exec_start: /app healthcheck,lab-app_blue-1
+1794382639627759373,exec_die,lab-app_blue-1
+1794382640628917026,exec_create: /app healthcheck,lab-app_blue-1
+1794382640628986513,exec_start: /app healthcheck,lab-app_blue-1
+1794382640657527435,exec_die,lab-app_blue-1
+1794382641657962380,exec_create: /app healthcheck,lab-app_blue-1
+1794382641658009170,exec_start: /app healthcheck,lab-app_blue-1
+1794382641686556782,exec_die,lab-app_blue-1
+1794382642687603591,exec_create: /app healthcheck,lab-app_blue-1
+1794382642687650881,exec_start: /app healthcheck,lab-app_blue-1
+1794382642716569077,exec_die,lab-app_blue-1
+1794382643716986956,exec_create: /app healthcheck,lab-app_blue-1
+1794382643717036539,exec_start: /app healthcheck,lab-app_blue-1
+1794382643746591255,exec_die,lab-app_blue-1
+1794382644747171605,exec_create: /app healthcheck,lab-app_blue-1
+1794382644747220927,exec_start: /app healthcheck,lab-app_blue-1
+1794382644776370159,exec_die,lab-app_blue-1
+1794382645777090992,exec_create: /app healthcheck,lab-app_blue-1
+1794382645777143500,exec_start: /app healthcheck,lab-app_blue-1
+1794382645806892196,exec_die,lab-app_blue-1
+1794382646807994166,exec_create: /app healthcheck,lab-app_blue-1
+1794382646808061255,exec_start: /app healthcheck,lab-app_blue-1
+1794382646837391783,exec_die,lab-app_blue-1
+1794382647839018128,exec_create: /app healthcheck,lab-app_blue-1
+1794382647839056995,exec_start: /app healthcheck,lab-app_blue-1
+1794382647868603442,exec_die,lab-app_blue-1
+1794382648869258451,exec_create: /app healthcheck,lab-app_blue-1
+1794382648869300373,exec_start: /app healthcheck,lab-app_blue-1
+1794382648898377817,exec_die,lab-app_blue-1
+1794382649899780683,exec_create: /app healthcheck,lab-app_blue-1
+1794382649899816276,exec_start: /app healthcheck,lab-app_blue-1
+1794382649928842703,exec_die,lab-app_blue-1
+1794382650929603869,exec_create: /app healthcheck,lab-app_blue-1
+1794382650929659512,exec_start: /app healthcheck,lab-app_blue-1
+1794382650959234261,exec_die,lab-app_blue-1
+1794382651959672530,exec_create: /app healthcheck,lab-app_blue-1
+1794382651959721783,exec_start: /app healthcheck,lab-app_blue-1
+1794382651989502926,exec_die,lab-app_blue-1
+1794382652990565185,exec_create: /app healthcheck,lab-app_blue-1
+1794382652990619705,exec_start: /app healthcheck,lab-app_blue-1
+1794382653020622539,exec_die,lab-app_blue-1
+1794382654021970368,exec_create: /app healthcheck,lab-app_blue-1
+1794382654022009115,exec_start: /app healthcheck,lab-app_blue-1
+1794382654052982103,exec_die,lab-app_blue-1
+1794382655054112290,exec_create: /app healthcheck,lab-app_blue-1
+1794382655054157186,exec_start: /app healthcheck,lab-app_blue-1
+1794382655083277595,exec_die,lab-app_blue-1
+1794382656083883532,exec_create: /app healthcheck,lab-app_blue-1
+1794382656083941127,exec_start: /app healthcheck,lab-app_blue-1
+1794382656113499023,exec_die,lab-app_blue-1
+1794382657114340533,exec_create: /app healthcheck,lab-app_blue-1
+1794382657114387993,exec_start: /app healthcheck,lab-app_blue-1
+1794382657144499913,exec_die,lab-app_blue-1
+1794382658145059196,exec_create: /app healthcheck,lab-app_blue-1
+1794382658145105063,exec_start: /app healthcheck,lab-app_blue-1
+1794382658174936309,exec_die,lab-app_blue-1
+1794382659175997854,exec_create: /app healthcheck,lab-app_blue-1
+1794382659176036371,exec_start: /app healthcheck,lab-app_blue-1
+1794382659207150839,exec_die,lab-app_blue-1
+1794382660208470681,exec_create: /app healthcheck,lab-app_blue-1
+1794382660208509168,exec_start: /app healthcheck,lab-app_blue-1
+1794382660238026749,exec_die,lab-app_blue-1
+1794382661239068138,exec_create: /app healthcheck,lab-app_blue-1
+1794382661239114646,exec_start: /app healthcheck,lab-app_blue-1
+1794382661270898521,exec_die,lab-app_blue-1
+1794382662272011794,exec_create: /app healthcheck,lab-app_blue-1
+1794382662272124220,exec_start: /app healthcheck,lab-app_blue-1
+1794382662301483746,exec_die,lab-app_blue-1
+1794382663302991832,exec_create: /app healthcheck,lab-app_blue-1
+1794382663303057089,exec_start: /app healthcheck,lab-app_blue-1
+1794382663333756120,exec_die,lab-app_blue-1
+1794382664334922182,exec_create: /app healthcheck,lab-app_blue-1
+1794382664334963032,exec_start: /app healthcheck,lab-app_blue-1
+1794382664364320875,exec_die,lab-app_blue-1
+1794382665365299755,exec_create: /app healthcheck,lab-app_blue-1
+1794382665365345293,exec_start: /app healthcheck,lab-app_blue-1
+1794382665396168687,exec_die,lab-app_blue-1
+1794382666396928743,exec_create: /app healthcheck,lab-app_blue-1
+1794382666396996183,exec_start: /app healthcheck,lab-app_blue-1
+1794382666427083570,exec_die,lab-app_blue-1
+1794382667428190919,exec_create: /app healthcheck,lab-app_blue-1
+1794382667428230248,exec_start: /app healthcheck,lab-app_blue-1
+1794382667457838161,exec_die,lab-app_blue-1
+1794382668458543431,exec_create: /app healthcheck,lab-app_blue-1
+1794382668458596759,exec_start: /app healthcheck,lab-app_blue-1
+1794382668488842781,exec_die,lab-app_blue-1
+1794382668687051112,create,lab-app_green-1
+1794382669489809301,exec_create: /app healthcheck,lab-app_blue-1
+1794382669489883671,exec_start: /app healthcheck,lab-app_blue-1
+1794382669520600568,exec_die,lab-app_blue-1
+1794382669667602059,start,lab-app_green-1
+1794382670521686980,exec_create: /app healthcheck,lab-app_blue-1
+1794382670521730875,exec_start: /app healthcheck,lab-app_blue-1
+1794382670550823650,exec_die,lab-app_blue-1
+1794382671551917248,exec_create: /app healthcheck,lab-app_blue-1
+1794382671551984277,exec_start: /app healthcheck,lab-app_blue-1
+1794382671583366001,exec_die,lab-app_blue-1
+1794382672584912458,exec_create: /app healthcheck,lab-app_blue-1
+1794382672584980147,exec_start: /app healthcheck,lab-app_blue-1
+1794382672614790850,exec_die,lab-app_blue-1
+1794382673615579562,exec_create: /app healthcheck,lab-app_blue-1
+1794382673615637477,exec_start: /app healthcheck,lab-app_blue-1
+1794382673647377540,exec_die,lab-app_blue-1
+1794382674648300741,exec_create: /app healthcheck,lab-app_blue-1
+1794382674648337015,exec_start: /app healthcheck,lab-app_blue-1
+1794382674668535199,exec_create: /app healthcheck,lab-app_green-1
+1794382674668627415,exec_start: /app healthcheck,lab-app_green-1
+1794382674681751694,exec_die,lab-app_blue-1
+1794382674704514478,exec_die,lab-app_green-1
+1794382674704763827,health_status: healthy,lab-app_green-1
+1794382675683159210,exec_create: /app healthcheck,lab-app_blue-1
+1794382675683211688,exec_start: /app healthcheck,lab-app_blue-1
+1794382675705075744,exec_create: /app healthcheck,lab-app_green-1
+1794382675705155933,exec_start: /app healthcheck,lab-app_green-1
+1794382675714445674,exec_die,lab-app_blue-1
+1794382675739841230,exec_die,lab-app_green-1
+1794382676715526578,exec_create: /app healthcheck,lab-app_blue-1
+1794382676715569421,exec_start: /app healthcheck,lab-app_blue-1
+1794382676740492589,exec_create: /app healthcheck,lab-app_green-1
+1794382676740546854,exec_start: /app healthcheck,lab-app_green-1
+1794382676749235992,exec_die,lab-app_blue-1
+1794382676773124210,exec_die,lab-app_green-1
+1794382677750541517,exec_create: /app healthcheck,lab-app_blue-1
+1794382677750594785,exec_start: /app healthcheck,lab-app_blue-1
+1794382677774139078,exec_create: /app healthcheck,lab-app_green-1
+1794382677774184025,exec_start: /app healthcheck,lab-app_green-1
+1794382677782153221,exec_die,lab-app_blue-1
+1794382677806013791,exec_die,lab-app_green-1
+1794382678783159005,exec_create: /app healthcheck,lab-app_blue-1
+1794382678783207307,exec_start: /app healthcheck,lab-app_blue-1
+1794382678806621953,exec_create: /app healthcheck,lab-app_green-1
+1794382678806660901,exec_start: /app healthcheck,lab-app_green-1
+1794382678814708313,exec_die,lab-app_blue-1
+1794382678839281251,exec_die,lab-app_green-1
+1794382679815968418,exec_create: /app healthcheck,lab-app_blue-1
+1794382679816010851,exec_start: /app healthcheck,lab-app_blue-1
+1794382679840943741,exec_create: /app healthcheck,lab-app_green-1
+1794382679841064434,exec_start: /app healthcheck,lab-app_green-1
+1794382679846258639,exec_die,lab-app_blue-1
+1794382679872317268,exec_die,lab-app_green-1
+1794382680846916480,exec_create: /app healthcheck,lab-app_blue-1
+1794382680846994530,exec_start: /app healthcheck,lab-app_blue-1
+1794382680872928093,exec_create: /app healthcheck,lab-app_green-1
+1794382680872985318,exec_start: /app healthcheck,lab-app_green-1
+1794382680878401727,exec_die,lab-app_blue-1
+1794382680904896119,exec_die,lab-app_green-1
+1794382681879153481,exec_create: /app healthcheck,lab-app_blue-1
+1794382681879192419,exec_start: /app healthcheck,lab-app_blue-1
+1794382681906160285,exec_create: /app healthcheck,lab-app_green-1
+1794382681906207184,exec_start: /app healthcheck,lab-app_green-1
+1794382681909526850,exec_die,lab-app_blue-1
+1794382681937484500,exec_die,lab-app_green-1
+1794382682909904787,exec_create: /app healthcheck,lab-app_blue-1
+1794382682909964476,exec_start: /app healthcheck,lab-app_blue-1
+1794382682938241807,exec_create: /app healthcheck,lab-app_green-1
+1794382682938303879,exec_start: /app healthcheck,lab-app_green-1
+1794382682941665832,exec_die,lab-app_blue-1
+1794382682968415797,exec_die,lab-app_green-1
+1794382683943081133,exec_create: /app healthcheck,lab-app_blue-1
+1794382683943155193,exec_start: /app healthcheck,lab-app_blue-1
+1794382683969259106,exec_create: /app healthcheck,lab-app_green-1
+1794382683969323281,exec_start: /app healthcheck,lab-app_green-1
+1794382683976356808,exec_die,lab-app_blue-1
+1794382684005448749,exec_die,lab-app_green-1
+1794382684977484761,exec_create: /app healthcheck,lab-app_blue-1
+1794382684977532362,exec_start: /app healthcheck,lab-app_blue-1
+1794382685006196001,exec_create: /app healthcheck,lab-app_green-1
+1794382685006246675,exec_start: /app healthcheck,lab-app_green-1
+1794382685008583029,exec_die,lab-app_blue-1
+1794382685036780398,exec_die,lab-app_green-1
+1794382686009822512,exec_create: /app healthcheck,lab-app_blue-1
+1794382686009882230,exec_start: /app healthcheck,lab-app_blue-1
+1794382686037958425,exec_create: /app healthcheck,lab-app_green-1
+1794382686038004013,exec_start: /app healthcheck,lab-app_green-1
+1794382686042745912,exec_die,lab-app_blue-1
+1794382686069748516,exec_die,lab-app_green-1
+1794382687043546601,exec_create: /app healthcheck,lab-app_blue-1
+1794382687043605263,exec_start: /app healthcheck,lab-app_blue-1
+1794382687070607561,exec_create: /app healthcheck,lab-app_green-1
+1794382687070657395,exec_start: /app healthcheck,lab-app_green-1
+1794382687072952096,exec_die,lab-app_blue-1
+1794382687103117580,exec_die,lab-app_green-1
+1794382688073982125,exec_create: /app healthcheck,lab-app_blue-1
+1794382688074024738,exec_start: /app healthcheck,lab-app_blue-1
+1794382688103682707,exec_create: /app healthcheck,lab-app_green-1
+1794382688103698470,exec_die,lab-app_blue-1
+1794382688103714704,exec_start: /app healthcheck,lab-app_green-1
+1794382688133517326,exec_die,lab-app_green-1
+1794382689104637915,exec_create: /app healthcheck,lab-app_blue-1
+1794382689104679497,exec_start: /app healthcheck,lab-app_blue-1
+1794382689134735353,exec_create: /app healthcheck,lab-app_green-1
+1794382689134783194,exec_start: /app healthcheck,lab-app_green-1
+1794382689138536983,exec_die,lab-app_blue-1
+1794382689165295435,exec_die,lab-app_green-1
+1794382690139939672,exec_create: /app healthcheck,lab-app_blue-1
+1794382690139989616,exec_start: /app healthcheck,lab-app_blue-1
+1794382690165934255,exec_create: /app healthcheck,lab-app_green-1
+1794382690165973413,exec_start: /app healthcheck,lab-app_green-1
+1794382690170452459,exec_die,lab-app_blue-1
+1794382690196791647,exec_die,lab-app_green-1
+1794382691171417682,exec_create: /app healthcheck,lab-app_blue-1
+1794382691171463429,exec_start: /app healthcheck,lab-app_blue-1
+1794382691197450877,exec_create: /app healthcheck,lab-app_green-1
+1794382691197505388,exec_start: /app healthcheck,lab-app_green-1
+1794382691203603161,exec_die,lab-app_blue-1
+1794382691228540853,exec_die,lab-app_green-1
+1794382692204390361,exec_create: /app healthcheck,lab-app_blue-1
+1794382692204442087,exec_start: /app healthcheck,lab-app_blue-1
+1794382692229406083,exec_create: /app healthcheck,lab-app_green-1
+1794382692229454044,exec_start: /app healthcheck,lab-app_green-1
+1794382692235535658,exec_die,lab-app_blue-1
+1794382692262214583,exec_die,lab-app_green-1
+1794382693236711044,exec_create: /app healthcheck,lab-app_blue-1
+1794382693236760457,exec_start: /app healthcheck,lab-app_blue-1
+1794382693263116181,exec_create: /app healthcheck,lab-app_green-1
+1794382693263151253,exec_start: /app healthcheck,lab-app_green-1
+1794382693268003796,exec_die,lab-app_blue-1
+1794382693293496040,exec_die,lab-app_green-1
+1794382694269178136,exec_create: /app healthcheck,lab-app_blue-1
+1794382694269234138,exec_start: /app healthcheck,lab-app_blue-1
+1794382694294484650,exec_create: /app healthcheck,lab-app_green-1
+1794382694294522366,exec_start: /app healthcheck,lab-app_green-1
+1794382694302981160,exec_die,lab-app_blue-1
+1794382694327953239,exec_die,lab-app_green-1
+1794382695303826452,exec_create: /app healthcheck,lab-app_blue-1
+1794382695303883587,exec_start: /app healthcheck,lab-app_blue-1
+1794382695328926141,exec_create: /app healthcheck,lab-app_green-1
+1794382695329035091,exec_start: /app healthcheck,lab-app_green-1
+1794382695335652914,exec_die,lab-app_blue-1
+1794382695360161098,exec_die,lab-app_green-1
+1794382696239132558,kill,lab-app_blue-1
+1794382696361185120,exec_create: /app healthcheck,lab-app_green-1
+1794382696361230096,exec_start: /app healthcheck,lab-app_green-1
+1794382696391958760,exec_die,lab-app_green-1
+1794382696527438026,stop,lab-app_blue-1
+1794382696529057053,die,lab-app_blue-1
+1794382696588461587,destroy,lab-app_blue-1
+1794382697393356750,exec_create: /app healthcheck,lab-app_green-1
+1794382697393395206,exec_start: /app healthcheck,lab-app_green-1
+1794382697422709690,exec_die,lab-app_green-1
+1794382698423116424,exec_create: /app healthcheck,lab-app_green-1
+1794382698423178145,exec_start: /app healthcheck,lab-app_green-1
+1794382698454113190,exec_die,lab-app_green-1
+1794382699454736494,exec_create: /app healthcheck,lab-app_green-1
+1794382699454783103,exec_start: /app healthcheck,lab-app_green-1
+1794382699484905746,exec_die,lab-app_green-1
+1794382700485991183,exec_create: /app healthcheck,lab-app_green-1
+1794382700486025653,exec_start: /app healthcheck,lab-app_green-1
+1794382700516272441,exec_die,lab-app_green-1
+1794382701516925987,exec_create: /app healthcheck,lab-app_green-1
+1794382701516964143,exec_start: /app healthcheck,lab-app_green-1
+1794382701545762377,exec_die,lab-app_green-1
+1794382702547128663,exec_create: /app healthcheck,lab-app_green-1
+1794382702547176614,exec_start: /app healthcheck,lab-app_green-1
+1794382702577114278,exec_die,lab-app_green-1
+1794382703578376154,exec_create: /app healthcheck,lab-app_green-1
+1794382703578421832,exec_start: /app healthcheck,lab-app_green-1
+1794382703608908893,exec_die,lab-app_green-1
+1794382704609959828,exec_create: /app healthcheck,lab-app_green-1
+1794382704610016291,exec_start: /app healthcheck,lab-app_green-1
+1794382704640102254,exec_die,lab-app_green-1
+1794382705640695537,exec_create: /app healthcheck,lab-app_green-1
+1794382705640736688,exec_start: /app healthcheck,lab-app_green-1
+1794382705671878617,exec_die,lab-app_green-1
+1794382706672894445,exec_create: /app healthcheck,lab-app_green-1
+1794382706672945971,exec_start: /app healthcheck,lab-app_green-1
+1794382706702907425,exec_die,lab-app_green-1
+1794382707703474259,exec_create: /app healthcheck,lab-app_green-1
+1794382707703523302,exec_start: /app healthcheck,lab-app_green-1
+1794382707734163174,exec_die,lab-app_green-1
+1794382708734629014,exec_create: /app healthcheck,lab-app_green-1
+1794382708734676354,exec_start: /app healthcheck,lab-app_green-1
+1794382708764340297,exec_die,lab-app_green-1
+1794382709764925439,exec_create: /app healthcheck,lab-app_green-1
+1794382709764999043,exec_start: /app healthcheck,lab-app_green-1
+1794382709796301781,exec_die,lab-app_green-1
+1794382710797306131,exec_create: /app healthcheck,lab-app_green-1
+1794382710797371017,exec_start: /app healthcheck,lab-app_green-1
+1794382710826133815,exec_die,lab-app_green-1
+1794382711826839323,exec_create: /app healthcheck,lab-app_green-1
+1794382711826901144,exec_start: /app healthcheck,lab-app_green-1
+1794382711857369093,exec_die,lab-app_green-1
+1794382712858918029,exec_create: /app healthcheck,lab-app_green-1
+1794382712858986100,exec_start: /app healthcheck,lab-app_green-1
+1794382712889476762,exec_die,lab-app_green-1
+1794382713890673296,exec_create: /app healthcheck,lab-app_green-1
+1794382713890733455,exec_start: /app healthcheck,lab-app_green-1
+1794382713921324206,exec_die,lab-app_green-1
+1794382714922644803,exec_create: /app healthcheck,lab-app_green-1
+1794382714922683470,exec_start: /app healthcheck,lab-app_green-1
+1794382714951874076,exec_die,lab-app_green-1
+1794382715952358553,exec_create: /app healthcheck,lab-app_green-1
+1794382715952419764,exec_start: /app healthcheck,lab-app_green-1
+1794382715984721834,exec_die,lab-app_green-1
+1794382716985764001,exec_create: /app healthcheck,lab-app_green-1
+1794382716985806854,exec_start: /app healthcheck,lab-app_green-1
+1794382717016491383,exec_die,lab-app_green-1
+1794382718017569841,exec_create: /app healthcheck,lab-app_green-1
+1794382718017689503,exec_start: /app healthcheck,lab-app_green-1
+1794382718049705786,exec_die,lab-app_green-1
+1794382719050736445,exec_create: /app healthcheck,lab-app_green-1
+1794382719050815517,exec_start: /app healthcheck,lab-app_green-1
+1794382719081113895,exec_die,lab-app_green-1
+1794382720082450085,exec_create: /app healthcheck,lab-app_green-1
+1794382720082483865,exec_start: /app healthcheck,lab-app_green-1
+1794382720113051091,exec_die,lab-app_green-1
+1794382721113825416,exec_create: /app healthcheck,lab-app_green-1
+1794382721113907588,exec_start: /app healthcheck,lab-app_green-1
+1794382721146553726,exec_die,lab-app_green-1
+1794382722147088181,exec_create: /app healthcheck,lab-app_green-1
+1794382722147150604,exec_start: /app healthcheck,lab-app_green-1
+1794382722177818073,exec_die,lab-app_green-1
+1794382723178988682,exec_create: /app healthcheck,lab-app_green-1
+1794382723179043914,exec_start: /app healthcheck,lab-app_green-1
+1794382723210688482,exec_die,lab-app_green-1
+1794382724211268691,exec_create: /app healthcheck,lab-app_green-1
+1794382724211337392,exec_start: /app healthcheck,lab-app_green-1
+1794382724241878159,exec_die,lab-app_green-1
+1794382725242788155,exec_create: /app healthcheck,lab-app_green-1
+1794382725242840282,exec_start: /app healthcheck,lab-app_green-1
+1794382725273097597,exec_die,lab-app_green-1
+1794382726274477842,exec_create: /app healthcheck,lab-app_green-1
+1794382726274533825,exec_start: /app healthcheck,lab-app_green-1
+1794382726305304850,exec_die,lab-app_green-1
+1794382727305837021,exec_create: /app healthcheck,lab-app_green-1
+1794382727305895728,exec_start: /app healthcheck,lab-app_green-1
+1794382727336656026,exec_die,lab-app_green-1
+1794382728337133417,exec_create: /app healthcheck,lab-app_green-1
+1794382728337205214,exec_start: /app healthcheck,lab-app_green-1
+1794382728367225007,exec_die,lab-app_green-1
+1794382729368347171,exec_create: /app healthcheck,lab-app_green-1
+1794382729368402813,exec_start: /app healthcheck,lab-app_green-1
+1794382729398859138,exec_die,lab-app_green-1
+1794382730399995242,exec_create: /app healthcheck,lab-app_green-1
+1794382730400049372,exec_start: /app healthcheck,lab-app_green-1
+1794382730429843538,exec_die,lab-app_green-1
+1794382731431175267,exec_create: /app healthcheck,lab-app_green-1
+1794382731431224871,exec_start: /app healthcheck,lab-app_green-1
+1794382731461166234,exec_die,lab-app_green-1
+1794382732461793833,exec_create: /app healthcheck,lab-app_green-1
+1794382732461838058,exec_start: /app healthcheck,lab-app_green-1
+1794382732492322423,exec_die,lab-app_green-1
+1794382733493161994,exec_create: /app healthcheck,lab-app_green-1
+1794382733493210987,exec_start: /app healthcheck,lab-app_green-1
+1794382733523445950,exec_die,lab-app_green-1
+1794382734523917051,exec_create: /app healthcheck,lab-app_green-1
+1794382734523963394,exec_start: /app healthcheck,lab-app_green-1
+1794382734554082467,exec_die,lab-app_green-1
+1794382735555318898,exec_create: /app healthcheck,lab-app_green-1
+1794382735555356744,exec_start: /app healthcheck,lab-app_green-1
+1794382735586745629,exec_die,lab-app_green-1
+1794382736587455498,exec_create: /app healthcheck,lab-app_green-1
+1794382736587507705,exec_start: /app healthcheck,lab-app_green-1
+1794382736617425705,exec_die,lab-app_green-1
+1794382737617940746,exec_create: /app healthcheck,lab-app_green-1
+1794382737617984981,exec_start: /app healthcheck,lab-app_green-1
+1794382737648506128,exec_die,lab-app_green-1
+1794382738648918100,exec_create: /app healthcheck,lab-app_green-1
+1794382738648970408,exec_start: /app healthcheck,lab-app_green-1
+1794382738678387542,exec_die,lab-app_green-1
+1794382739679767061,exec_create: /app healthcheck,lab-app_green-1
+1794382739679821522,exec_start: /app healthcheck,lab-app_green-1
+1794382739710953546,exec_die,lab-app_green-1
+1794382740711997624,exec_create: /app healthcheck,lab-app_green-1
+1794382740712051614,exec_start: /app healthcheck,lab-app_green-1
+1794382740740788939,exec_die,lab-app_green-1
+1794382741742064606,exec_create: /app healthcheck,lab-app_green-1
+1794382741742128942,exec_start: /app healthcheck,lab-app_green-1
+1794382741771664401,exec_die,lab-app_green-1
+1794382742772961811,exec_create: /app healthcheck,lab-app_green-1
+1794382742773012005,exec_start: /app healthcheck,lab-app_green-1
+1794382742802744676,exec_die,lab-app_green-1
+1794382743803668228,exec_create: /app healthcheck,lab-app_green-1
+1794382743803714757,exec_start: /app healthcheck,lab-app_green-1
+1794382743833877699,exec_die,lab-app_green-1
+1794382744834323632,exec_create: /app healthcheck,lab-app_green-1
+1794382744834366125,exec_start: /app healthcheck,lab-app_green-1
+1794382744863261788,exec_die,lab-app_green-1
