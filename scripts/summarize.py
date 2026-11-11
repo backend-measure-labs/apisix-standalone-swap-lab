@@ -28,6 +28,35 @@ def read_events(d):
     return ev
 
 
+def docker_timeline(d, t0):
+    """docker 이벤트에서 배포 뒤 첫 시각을 뽑는다: 새것 healthy, 옛것 SIGTERM · SIGKILL · die."""
+    p = os.path.join(d, "docker-events.csv")
+    out = {"ev_healthy": None, "ev_sigterm": None, "ev_sigkill": None, "ev_die": None}
+    if t0 is None or not os.path.exists(p):
+        return out
+    for line in open(p):
+        parts = line.strip().split(",")
+        if len(parts) < 3 or not parts[0].isdigit():
+            continue
+        t = int(parts[0]) / 1e9 - t0
+        action, name = parts[1], parts[2]
+        sig = parts[3] if len(parts) > 3 else ""
+        if t < 0 or "app" not in name:
+            continue
+        key = None
+        if action == "health_status: healthy":
+            key = "ev_healthy"
+        elif action == "kill" and sig == "15":
+            key = "ev_sigterm"
+        elif action == "kill" and sig == "9":
+            key = "ev_sigkill"
+        elif action == "die":
+            key = "ev_die"
+        if key and out[key] is None:
+            out[key] = t
+    return out
+
+
 def classify(row):
     try:
         http, size, code = int(row["http"]), int(row["bytes"]), int(row["exit"])
@@ -63,13 +92,30 @@ def one(d):
     out["cut_at"] = rng(cut_end)
     out["fail_at"] = rng(fail_start)
     out["deploy_s"] = f"{ev['deploy_end'] - t0:.1f}" if t0 and "deploy_end" in ev else "-"
-    for k in ("new_healthy", "switched", "drained", "old_stop", "old_stopped"):
+    for k in ("switched", "drained", "drain_timeout"):
         out[k] = f"{ev[k] - t0:.1f}" if t0 and k in ev else "-"
+    for k, v in docker_timeline(d, t0).items():
+        out[k] = f"{v:.1f}" if v is not None else "-"
     return out
 
 
+def excluded_reason(d):
+    meta = open(os.path.join(d, "meta.txt")).read() if os.path.exists(os.path.join(d, "meta.txt")) else ""
+    if "reset failed" in meta:
+        return "reset failed"
+    if not os.path.exists(os.path.join(d, "downloads.csv")):
+        return "downloads.csv 없음"
+    return None
+
+
 def main():
-    runs = [one(d) for d in sorted(glob.glob(os.path.join(RAW, "run-*")))]
+    runs, excluded = [], []
+    for d in sorted(glob.glob(os.path.join(RAW, "run-*"))):
+        why = excluded_reason(d)
+        if why:
+            excluded.append((os.path.basename(d), why))
+        else:
+            runs.append(one(d))
     if not runs:
         sys.exit("no runs")
     cols = list(runs[0].keys())
@@ -80,11 +126,14 @@ def main():
     agg = defaultdict(list)
     for r in runs:
         agg[(r["mode"], r["level"])].append(r)
-    lines = ["| 비교군 | 종료 | 회차 | 끊김 난 회차 | 끊김 합계 | 시작 실패 난 회차 | 시작 실패 합계 | 다운로드 합계 |",
-             "|---|---|---|---|---|---|---|---|"]
+    lines = ["| 비교군 | 종료 | 회차 | 끊김 난 회차 | 끊김 합계 | 시작 실패 난 회차 | 시작 실패 합계 | 다운로드 합계 | 배포 실패(롤백) | drain 상한 도달 |",
+             "|---|---|---|---|---|---|---|---|---|---|"]
     for (m, l), rs in sorted(agg.items()):
         lines.append(f"| {m} | {l} | {len(rs)} | {sum(r['cut'] > 0 for r in rs)} | {sum(r['cut'] for r in rs)} | "
-                     f"{sum(r['start_fail'] > 0 for r in rs)} | {sum(r['start_fail'] for r in rs)} | {sum(r['n'] for r in rs)} |")
+                     f"{sum(r['start_fail'] > 0 for r in rs)} | {sum(r['start_fail'] for r in rs)} | {sum(r['n'] for r in rs)} | "
+                     f"{sum(r['deploy_exit'] not in ('0', '?') for r in rs)} | {sum(r['drain_timeout'] != '-' for r in rs)} |")
+    lines += ["", "제외 회차", "", "| 회차 | 사유 |", "|---|---|"]
+    lines += [f"| {n} | {w} |" for n, w in excluded] or ["| 없음 | - |"]
     open(os.path.join(ROOT, "results", "summary.md"), "w").write("\n".join(lines) + "\n")
     print("\n".join(lines))
 

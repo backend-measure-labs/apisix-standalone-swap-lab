@@ -17,7 +17,7 @@ SIZE=$((20 * 1024 * 1024)); RATE=$((1024 * 1024))
 echo "mode=$mode shutdown=$shut name=$name" > "$OUT/meta.txt"
 if ! reset_env "$mode"; then echo "reset failed" >> "$OUT/meta.txt"; exit 2; fi
 
-docker events --filter type=container --format '{{.TimeNano}},{{.Action}},{{.Actor.Attributes.name}}' > "$OUT/docker-events.csv" &
+docker events --filter type=container --format '{{.TimeNano}},{{.Action}},{{.Actor.Attributes.name}},{{.Actor.Attributes.signal}}' > "$OUT/docker-events.csv" &
 EVPID=$!
 echo "start,end,http,bytes,exit,version,host" > "$OUT/downloads.csv"
 

@@ -37,11 +37,15 @@ case "$mode" in
     ev switched
     # 옛 색으로 가는 진행 중 다운로드가 0 이 될 때까지 기다린 뒤 멈춘다 (최대 DRAIN_MAX 초)
     oldip=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' "$(docker compose ps -q "$active")")
+    drain=timeout; qfail=0
     for i in $(seq 1 $(( ${DRAIN_MAX:-600} * 2 ))); do
-      [ "$(curl -s -m 1 "http://$oldip:8080/inflight")" = 0 ] && break
+      n=$(curl -s -m 1 "http://$oldip:8080/inflight") || n=""
+      [ -z "$n" ] && qfail=$((qfail + 1))
+      [ "$n" = 0 ] && { drain=done; break; }
       sleep 0.5
     done
-    ev drained
+    echo "drain=$drain inflight_query_failures=$qfail" >> "$OUT/meta.txt"
+    if [ "$drain" = done ]; then ev drained; else ev drain_timeout; fi
     ev old_stop
     docker compose stop "$active"   # SIGTERM, stop_grace_period 뒤 SIGKILL
     ev old_stopped
