@@ -4,6 +4,10 @@ set -uo pipefail
 cd "$(dirname "$0")/.."
 REPS="${REPS:-5}"
 SEED="${SEED:-$(date +%s)}"
+# 커밋된 이전 결과와 섞이지 않게 한다. 이전 결과는 옮기거나 지우고 실행한다
+if ls results/raw/run-* >/dev/null 2>&1; then
+  echo "results/raw 에 이전 회차가 있습니다. 옮기거나 지운 뒤 실행하세요"; exit 4
+fi
 mkdir -p results/raw
 echo "seed=$SEED reps=$REPS" > results/raw/plan.txt
 

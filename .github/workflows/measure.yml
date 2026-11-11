@@ -45,6 +45,8 @@ jobs:
           docker build -q -f Dockerfile.app -t lab-app:local .
           docker pull -q apache/apisix:3.15.0-debian
           docker pull -q alpine:3.20
+          # 체크아웃에 들어 있는 커밋된 결과를 비우고 이번 실행 결과만 남긴다
+          rm -rf results
           mkdir -p results/raw
           {
             echo "kernel=$(uname -r)"; echo "arch=$(uname -m)"
