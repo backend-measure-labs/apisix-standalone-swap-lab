@@ -12,8 +12,8 @@ reset_env c3
 APP_VERSION=v2 docker compose up -d --no-deps --wait app_green >/dev/null
 apx=$(docker compose ps -q apisix)
 log "## 워커 수 (nginx worker 프로세스)"
-docker top "$apx" -eo pid,args | grep -E 'nginx: (worker|privileged)' | tee -a "$LOG" >/dev/null
-log "workers=$(docker top "$apx" -eo args | grep -c 'nginx: worker process')"
+docker top "$apx" | grep -E 'nginx: (worker|privileged|master)' | tee -a "$LOG" >/dev/null
+log "workers=$(docker top "$apx" | grep -c 'nginx: worker process')"
 log "(아래 reload_lines 와 비교. 로그 줄의 pid 는 reload-<회>.log 에 남겨 워커 pid 와 대조한다)"
 log "## P7 · P8 노드 교체 뒤 반영 시차 (blue v1 ↔ green v2 를 번갈아 10회, 시작 위상을 0.1초씩 바꿈)"
 log "trial,write_to_first_new_s,write_to_last_old_s,reload_lines"
