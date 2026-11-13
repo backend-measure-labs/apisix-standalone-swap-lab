@@ -1,0 +1,12 @@
+# 운영 BE 와 같은 런타임: amazoncorretto:25-alpine 에 curl, java 가 PID 1 이라 SIGTERM 이 JVM 에 닿는다
+FROM maven:3.9.12-eclipse-temurin-25 AS build
+WORKDIR /src
+COPY spring/pom.xml .
+RUN mvn -q -B dependency:go-offline
+COPY spring/src src
+RUN mvn -q -B package -DskipTests
+
+FROM amazoncorretto:25-alpine
+RUN apk add --no-cache curl
+COPY --from=build /src/target/lab-spring.jar /app.jar
+ENTRYPOINT ["java", "-jar", "/app.jar"]
