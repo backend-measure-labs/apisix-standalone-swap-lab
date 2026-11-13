@@ -15,7 +15,8 @@ from collections import defaultdict
 
 SIZE = 20 * 1024 * 1024
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-RAW = os.path.join(ROOT, "results", "raw")
+RES = os.path.join(ROOT, os.environ.get("RES", "results"))
+RAW = os.path.join(RES, "raw")
 
 
 def read_events(d):
@@ -96,7 +97,38 @@ def one(d):
         out[k] = f"{ev[k] - t0:.1f}" if t0 and k in ev else "-"
     for k, v in docker_timeline(d, t0).items():
         out[k] = f"{v:.1f}" if v is not None else "-"
+    out["deploy2_exit"] = meta.get("deploy2_exit", "-")
+    out.update(probe_stats(d, t0, ev))
     return out
+
+
+def probe_stats(d, t0, ev):
+    """2차 측정 프로브(/version 0.1초 간격): 실패 수 · 실패 시각 · 반영 확인 뒤 마지막 옛 버전 응답 시각."""
+    p = os.path.join(d, "probe.csv")
+    out = {"probe_n": "-", "probe_fail": "-", "probe_fail_at": "-", "probe_fail_vs_sigterm": "-",
+           "switch_to_sigterm": "-", "old_after_switch": "-"}
+    if t0 is None or not os.path.exists(p):
+        return out
+    rows = [r for r in csv.reader(open(p)) if len(r) >= 3]
+    fails = [float(r[0]) - t0 for r in rows if r[1] != "200"]
+    out["probe_n"], out["probe_fail"] = len(rows), len(fails)
+    out["probe_fail_at"] = f"{min(fails):.1f}~{max(fails):.1f}" if fails else "-"
+    st = ev.get("old_sigterm")
+    if st is not None and fails:
+        rel = [f + t0 - st for f in fails]
+        out["probe_fail_vs_sigterm"] = f"{min(rel):.2f}~{max(rel):.2f}"
+    sw = ev.get("switched")
+    if sw is not None and st is not None:
+        out["switch_to_sigterm"] = f"{st - sw:.2f}"
+    if sw is not None:
+        old = [float(r[0]) - t0 for r in rows if r[2] == "v1" and float(r[0]) >= sw]
+        out["old_after_switch"] = f"{max(old) - (sw - t0):.2f}" if old else "0"
+    return out
+
+
+def probe_cell(rs, f):
+    vals = [r for r in rs if r["probe_fail"] != "-"]
+    return sum(f(r) for r in vals) if vals else "-"
 
 
 def excluded_reason(d):
@@ -119,22 +151,24 @@ def main():
     if not runs:
         sys.exit("no runs")
     cols = list(runs[0].keys())
-    with open(os.path.join(ROOT, "results", "runs.csv"), "w", newline="") as f:
+    with open(os.path.join(RES, "runs.csv"), "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=cols)
         w.writeheader()
         w.writerows(runs)
     agg = defaultdict(list)
     for r in runs:
         agg[(r["mode"], r["level"])].append(r)
-    lines = ["| 비교군 | 종료 | 회차 | 끊김 난 회차 | 끊김 합계 | 시작 실패 난 회차 | 시작 실패 합계 | 다운로드 합계 | 배포 실패(롤백) | drain 상한 도달 |",
-             "|---|---|---|---|---|---|---|---|---|---|"]
+    lines = ["| 비교군 | 종료 | 회차 | 끊김 난 회차 | 끊김 합계 | 시작 실패 난 회차 | 시작 실패 합계 | 다운로드 합계 | 배포 실패(롤백) | drain 상한 도달 | 프로브 실패 난 회차 | 프로브 실패 합계 | 두 번째 배포 종료 코드 |",
+             "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for (m, l), rs in sorted(agg.items()):
         lines.append(f"| {m} | {l} | {len(rs)} | {sum(r['cut'] > 0 for r in rs)} | {sum(r['cut'] for r in rs)} | "
                      f"{sum(r['start_fail'] > 0 for r in rs)} | {sum(r['start_fail'] for r in rs)} | {sum(r['n'] for r in rs)} | "
-                     f"{sum(r['deploy_exit'] not in ('0', '?') for r in rs)} | {sum(r['drain_timeout'] != '-' for r in rs)} |")
+                     f"{sum(r['deploy_exit'] not in ('0', '?') for r in rs)} | {sum(r['drain_timeout'] != '-' for r in rs)} | "
+                     f"{probe_cell(rs, lambda r: r['probe_fail'] > 0)} | {probe_cell(rs, lambda r: r['probe_fail'])} | "
+                     f"{' '.join(sorted(set(r['deploy2_exit'] for r in rs)))} |")
     lines += ["", "제외 회차", "", "| 회차 | 사유 |", "|---|---|"]
     lines += [f"| {n} | {w} |" for n, w in excluded] or ["| 없음 | - |"]
-    open(os.path.join(ROOT, "results", "summary.md"), "w").write("\n".join(lines) + "\n")
+    open(os.path.join(RES, "summary.md"), "w").write("\n".join(lines) + "\n")
     print("\n".join(lines))
 
 

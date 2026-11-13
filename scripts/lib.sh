@@ -41,11 +41,11 @@ wait_healthy() {
   return 1
 }
 
-# 모든 컨테이너를 내리고 mode 에 맞는 v1 구성을 띄운다 (c0 · c1 · c2 · none)
+# 모든 컨테이너를 내리고 mode 에 맞는 v1 구성을 띄운다. 색 서비스를 쓰는 비교군(c2 · c3 · c3w · e1 · e3 · idle)은 blue 로 시작한다
 reset_env() {
   local mode="$1"
   docker compose --profile observe down -t 0 --remove-orphans >/dev/null 2>&1
-  if [ "$mode" = c2 ]; then
+  if [ "$mode" != c0 ] && [ "$mode" != c1 ] && [ "$mode" != none ]; then
     set_node app_blue
     APP_VERSION=v1 docker compose up -d --wait app_blue apisix >/dev/null
   else

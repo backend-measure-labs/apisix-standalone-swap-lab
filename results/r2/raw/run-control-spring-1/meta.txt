@@ -1,0 +1,2 @@
+mode=idle shutdown=S3 name=run-control-spring-1
+deploy_exit=0

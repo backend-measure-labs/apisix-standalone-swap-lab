@@ -1,0 +1,21 @@
+## 워커 수 (nginx worker 프로세스)
+636                 5753                5707                0                   03:02               ?                   00:00:00            nginx: master process /usr/local/openresty/bin/openresty -p /usr/local/apisix -g daemon off;
+636                 5889                5753                0                   03:02               ?                   00:00:00            nginx: worker process
+636                 5890                5753                0                   03:02               ?                   00:00:00            nginx: worker process
+636                 5891                5753                0                   03:02               ?                   00:00:00            nginx: worker process
+636                 5892                5753                0                   03:02               ?                   00:00:00            nginx: worker process
+636                 5897                5753                0                   03:02               ?                   00:00:00            nginx: privileged agent process
+workers=4
+(아래 reload_lines 와 비교. 로그 줄의 pid 는 reload-<회>.log 에 남겨 워커 pid 와 대조한다)
+## P7 · P8 노드 교체 뒤 반영 시차 (blue v1 ↔ green v2 를 번갈아 10회, 시작 위상을 0.1초씩 바꿈)
+trial,write_to_first_new_s,write_to_last_old_s,reload_lines
+0,0.22,0.19,5
+1,0.14,0.12,5
+2,1.02,0.99,5
+3,0.91,0.89,5
+4,0.86,0.84,5
+5,0.77,0.75,5
+6,0.68,0.66,5
+7,0.58,0.56,5
+8,0.47,0.44,5
+9,0.34,0.31,5

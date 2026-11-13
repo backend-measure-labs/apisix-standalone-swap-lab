@@ -39,7 +39,7 @@ log "dns_two_addresses_at=${first_dns}s healthy_at=${first_healthy}s (배포 명
 # P4 · P5 · P6 (C2 의 전제)
 reset_env c2
 APP_VERSION=v2 docker compose up -d --no-deps --wait app_green >/dev/null
-log "## P4 같은 초 안의 두 번 쓰기 (blue→green→blue, 0.3초 간격). 최종이 v1 이어야 정상"
+log "## P4 1초 안의 두 번 쓰기 (mtime 해상도 1초, blue→green→blue, 0.3초 간격). 최종이 v1 이어야 정상"
 log "# 시도마다 초 경계에서 0.1초씩 늦게 시작해 1초 확인 타이머와의 위상을 바꾼다"
 for i in $(seq 0 9); do
   set_node app_blue; sleep 2.5; wait_version v1 3 10

@@ -1,0 +1,11 @@
+# 2차 측정 S3 수준: 색 서비스를 Spring 앱으로 바꾼다. COMPOSE_FILE=compose.yaml:compose.spring.yaml 로 겹쳐 쓴다
+services:
+  app_blue: &spring
+    image: lab-app-spring:local
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "-o", "/dev/null", "http://127.0.0.1:8080/health"]
+      interval: 1s
+      timeout: 2s
+      retries: 3
+      start_period: 60s
+  app_green: *spring

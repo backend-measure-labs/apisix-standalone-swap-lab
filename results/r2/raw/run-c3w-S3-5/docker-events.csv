@@ -1,0 +1,325 @@
+1794541951077260391,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541951077306958,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541951117066094,exec_die,lab-app_blue-1,<no value>
+1794541952118074339,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541952118124282,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541952157717139,exec_die,lab-app_blue-1,<no value>
+1794541953158714293,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541953158749198,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541953199188201,exec_die,lab-app_blue-1,<no value>
+1794541954199875777,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541954199914499,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541954238915872,exec_die,lab-app_blue-1,<no value>
+1794541955239989798,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541955240025264,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541955279423942,exec_die,lab-app_blue-1,<no value>
+1794541956280465408,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541956280499562,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541956320375674,exec_die,lab-app_blue-1,<no value>
+1794541957321978763,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541957322032152,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541957362874514,exec_die,lab-app_blue-1,<no value>
+1794541958363976519,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541958364011164,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541958404025078,exec_die,lab-app_blue-1,<no value>
+1794541959405454524,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541959405497464,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541959445367120,exec_die,lab-app_blue-1,<no value>
+1794541960446469095,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541960446511324,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541960486420096,exec_die,lab-app_blue-1,<no value>
+1794541961487423176,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541961487495120,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541961533400084,exec_die,lab-app_blue-1,<no value>
+1794541962534619880,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541962534651589,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541962575569660,exec_die,lab-app_blue-1,<no value>
+1794541963576433889,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541963576486137,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541963615786544,exec_die,lab-app_blue-1,<no value>
+1794541964617337597,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541964617391647,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541964659439182,exec_die,lab-app_blue-1,<no value>
+1794541965660566843,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541965660599634,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541965704213645,exec_die,lab-app_blue-1,<no value>
+1794541966704906052,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541966704956867,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541966744718374,exec_die,lab-app_blue-1,<no value>
+1794541967745906496,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541967745946480,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541967787445645,exec_die,lab-app_blue-1,<no value>
+1794541968788828320,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541968788861492,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541968829592841,exec_die,lab-app_blue-1,<no value>
+1794541969830665165,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541969830757617,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541969871051295,exec_die,lab-app_blue-1,<no value>
+1794541970871932407,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541970871987921,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541970914526642,exec_die,lab-app_blue-1,<no value>
+1794541971915499425,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541971915548005,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541971957768823,exec_die,lab-app_blue-1,<no value>
+1794541972959490131,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541972959536508,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541973000336043,exec_die,lab-app_blue-1,<no value>
+1794541974001085460,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541974001120044,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541974042407508,exec_die,lab-app_blue-1,<no value>
+1794541975043290137,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541975043326144,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541975084020565,exec_die,lab-app_blue-1,<no value>
+1794541976084993189,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541976085042521,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541976125941690,exec_die,lab-app_blue-1,<no value>
+1794541977126890286,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541977126941101,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541977170822295,exec_die,lab-app_blue-1,<no value>
+1794541978171878152,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541978171919980,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541978214850290,exec_die,lab-app_blue-1,<no value>
+1794541979216394621,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541979216447309,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541979258052892,exec_die,lab-app_blue-1,<no value>
+1794541980258954030,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541980259012058,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541980302969965,exec_die,lab-app_blue-1,<no value>
+1794541980727518940,create,lab-app_green-1,<no value>
+1794541980860348476,start,lab-app_green-1,<no value>
+1794541981303628264,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541981303707672,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541981364529098,exec_die,lab-app_blue-1,<no value>
+1794541982365637762,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541982365679830,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541982431934997,exec_die,lab-app_blue-1,<no value>
+1794541983433403893,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541983433461521,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541983507948280,exec_die,lab-app_blue-1,<no value>
+1794541984509128982,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541984509211996,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541984548808019,exec_die,lab-app_blue-1,<no value>
+1794541985549445779,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541985549484861,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541985593005795,exec_die,lab-app_blue-1,<no value>
+1794541985861136423,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541985861207926,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541986023949973,exec_die,lab-app_green-1,<no value>
+1794541986025356483,health_status: healthy,lab-app_green-1,<no value>
+1794541986593919661,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541986593978841,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541986634277672,exec_die,lab-app_blue-1,<no value>
+1794541987025944933,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541987026012539,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541987070176849,exec_die,lab-app_green-1,<no value>
+1794541987635785724,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541987635836418,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541987676283416,exec_die,lab-app_blue-1,<no value>
+1794541988071335842,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541988071399040,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541988114763753,exec_die,lab-app_green-1,<no value>
+1794541988676824487,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541988676881864,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541988716961705,exec_die,lab-app_blue-1,<no value>
+1794541989115864844,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541989115898918,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541989155859653,exec_die,lab-app_green-1,<no value>
+1794541989628555753,update,lab-app_blue-1,<no value>
+1794541989652616161,kill,lab-app_blue-1,15
+1794541989717586841,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541989717632727,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541989760987946,exec_die,lab-app_blue-1,<no value>
+1794541990156374500,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541990156420065,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541990197976408,exec_die,lab-app_green-1,<no value>
+1794541990762276429,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541990762336190,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541990805260977,exec_die,lab-app_blue-1,<no value>
+1794541991199030066,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541991199085540,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541991241616370,exec_die,lab-app_green-1,<no value>
+1794541991806232560,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541991806269479,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541991845791201,exec_die,lab-app_blue-1,<no value>
+1794541991846355003,health_status: unhealthy,lab-app_blue-1,<no value>
+1794541992242241820,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541992242287946,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541992283579958,exec_die,lab-app_green-1,<no value>
+1794541992846672867,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541992846709786,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541992889128901,exec_die,lab-app_blue-1,<no value>
+1794541993284848077,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541993284891828,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541993325209964,exec_die,lab-app_green-1,<no value>
+1794541993890510557,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541993890549099,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541993931007879,exec_die,lab-app_blue-1,<no value>
+1794541994326598999,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541994326644123,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541994367968842,exec_die,lab-app_green-1,<no value>
+1794541994931565040,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541994931619692,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541994973325033,exec_die,lab-app_blue-1,<no value>
+1794541995369346804,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541995369397248,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541995411686931,exec_die,lab-app_green-1,<no value>
+1794541995974329984,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541995974441881,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541996013001170,exec_die,lab-app_blue-1,<no value>
+1794541996412978804,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541996413041561,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541996457923182,exec_die,lab-app_green-1,<no value>
+1794541997013530210,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541997013573680,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541997053808179,exec_die,lab-app_blue-1,<no value>
+1794541997459305811,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541997459367075,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541997499759595,exec_die,lab-app_green-1,<no value>
+1794541998055032976,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541998055084602,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541998096053503,exec_die,lab-app_blue-1,<no value>
+1794541998501349759,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541998501398430,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541998543808475,exec_die,lab-app_green-1,<no value>
+1794541999097586632,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541999097620365,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794541999138875478,exec_die,lab-app_blue-1,<no value>
+1794541999544530703,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541999544575396,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794541999588045298,exec_die,lab-app_green-1,<no value>
+1794542000140631601,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794542000140685561,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794542000180267719,exec_die,lab-app_blue-1,<no value>
+1794542000589382240,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542000589434447,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542000640397880,exec_die,lab-app_green-1,<no value>
+1794542001181334428,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794542001181372519,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794542001220832061,exec_die,lab-app_blue-1,<no value>
+1794542001641746395,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542001641785758,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542001683217913,exec_die,lab-app_green-1,<no value>
+1794542002221874754,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794542002221930487,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794542002261334984,exec_die,lab-app_blue-1,<no value>
+1794542002684225813,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542002684279302,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542002728735171,exec_die,lab-app_green-1,<no value>
+1794542003262338689,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794542003262384404,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794542003304147244,exec_die,lab-app_blue-1,<no value>
+1794542003729233250,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542003729280258,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542003774850944,exec_die,lab-app_green-1,<no value>
+1794542004304652196,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794542004304709794,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794542004346649483,exec_die,lab-app_blue-1,<no value>
+1794542004776281861,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542004776322547,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542004819538476,exec_die,lab-app_green-1,<no value>
+1794542005347296232,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794542005347352748,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794542005387031477,exec_die,lab-app_blue-1,<no value>
+1794542005820517368,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542005820551913,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542005864900346,exec_die,lab-app_green-1,<no value>
+1794542006388632631,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794542006388750861,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_blue-1,<no value>
+1794542006429138923,exec_die,lab-app_blue-1,<no value>
+1794542006716457170,die,lab-app_blue-1,<no value>
+1794542006866135103,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542006866201787,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542006911802811,exec_die,lab-app_green-1,<no value>
+1794542007913087509,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542007913121923,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542007957132382,exec_die,lab-app_green-1,<no value>
+1794542008957697945,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542008957730716,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542008999208247,exec_die,lab-app_green-1,<no value>
+1794542010000337443,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542010000394820,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542010044646588,exec_die,lab-app_green-1,<no value>
+1794542011045463400,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542011045507402,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542011089187202,exec_die,lab-app_green-1,<no value>
+1794542012090237531,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542012090294647,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542012132093044,exec_die,lab-app_green-1,<no value>
+1794542013133509674,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542013133545792,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542013175489459,exec_die,lab-app_green-1,<no value>
+1794542014176184269,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542014176282804,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542014217514322,exec_die,lab-app_green-1,<no value>
+1794542015218438364,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542015218492665,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542015258884611,exec_die,lab-app_green-1,<no value>
+1794542016260182414,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542016260290378,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542016300640844,exec_die,lab-app_green-1,<no value>
+1794542017301907454,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542017301947789,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542017341506661,exec_die,lab-app_green-1,<no value>
+1794542018342511580,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542018342567103,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542018391979295,exec_die,lab-app_green-1,<no value>
+1794542019393379651,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542019393428191,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542019434852149,exec_die,lab-app_green-1,<no value>
+1794542020435438389,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542020435493692,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542020475510398,exec_die,lab-app_green-1,<no value>
+1794542021476641283,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542021476704331,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542021518787000,exec_die,lab-app_green-1,<no value>
+1794542022520198160,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542022520279191,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542022562371501,exec_die,lab-app_green-1,<no value>
+1794542023563208701,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542023563272008,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542023604909741,exec_die,lab-app_green-1,<no value>
+1794542024606052093,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542024606094021,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542024647468076,exec_die,lab-app_green-1,<no value>
+1794542025648491386,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542025648528034,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542025689499306,exec_die,lab-app_green-1,<no value>
+1794542026690501967,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542026690533736,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542026730395053,exec_die,lab-app_green-1,<no value>
+1794542027731673930,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542027731737358,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542027772931464,exec_die,lab-app_green-1,<no value>
+1794542028773463004,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542028773498430,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542028813055483,exec_die,lab-app_green-1,<no value>
+1794542029814503464,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542029814552275,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542029856064490,exec_die,lab-app_green-1,<no value>
+1794542030857097573,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542030857129522,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542030898455122,exec_die,lab-app_green-1,<no value>
+1794542031899931371,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542031899987436,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542031938840187,exec_die,lab-app_green-1,<no value>
+1794542032940196353,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542032940267776,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542032979718633,exec_die,lab-app_green-1,<no value>
+1794542033980555526,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542033980610990,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542034020931326,exec_die,lab-app_green-1,<no value>
+1794542035022222189,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542035022254559,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542035060910727,exec_die,lab-app_green-1,<no value>
+1794542036061838600,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542036061888673,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542036102353409,exec_die,lab-app_green-1,<no value>
+1794542037103435076,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542037103484418,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542037143307504,exec_die,lab-app_green-1,<no value>
+1794542038144160196,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542038144237008,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542038183113592,exec_die,lab-app_green-1,<no value>
+1794542039184633159,exec_create: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542039184680307,exec_start: curl -fsS -o /dev/null http://127.0.0.1:8080/health,lab-app_green-1,<no value>
+1794542039223512689,exec_die,lab-app_green-1,<no value>
