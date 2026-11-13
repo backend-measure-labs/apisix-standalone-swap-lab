@@ -12,7 +12,9 @@ reset_env c3
 APP_VERSION=v2 docker compose up -d --no-deps --wait app_green >/dev/null
 apx=$(docker compose ps -q apisix)
 log "## 워커 수 (nginx worker 프로세스)"
+docker top "$apx" -eo pid,args | grep -E 'nginx: (worker|privileged)' | tee -a "$LOG" >/dev/null
 log "workers=$(docker top "$apx" -eo args | grep -c 'nginx: worker process')"
+log "(아래 reload_lines 와 비교. 로그 줄의 pid 는 reload-<회>.log 에 남겨 워커 pid 와 대조한다)"
 log "## P7 · P8 노드 교체 뒤 반영 시차 (blue v1 ↔ green v2 를 번갈아 10회, 시작 위상을 0.1초씩 바꿈)"
 log "trial,write_to_first_new_s,write_to_last_old_s,reload_lines"
 node=app_blue
@@ -27,7 +29,8 @@ for i in $(seq 0 9); do
   while python3 -c "import sys,time; sys.exit(0 if time.time()<$end else 1)"; do
     echo "$(now),$(curl -s -o /dev/null -m 1 -w '%{http_code},%header{x-version}' http://127.0.0.1:9080/version)" >> "$f"
   done
-  lines=$(docker logs --since "$since" "$apx" 2>&1 | grep -c 'apisix.yaml reloaded' || true)
+  docker logs --since "$since" "$apx" 2>&1 | grep 'apisix.yaml reloaded' > "$OUT/reload-$i.log"
+  lines=$(wc -l < "$OUT/reload-$i.log" | tr -d ' ')
   python3 - "$f" "$t0" "$want" "$old" "$i" "$lines" <<'PY' | tee -a "$LOG"
 import csv, sys
 f, t0, want, old, i, lines = sys.argv[1], float(sys.argv[2]), sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6]

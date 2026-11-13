@@ -13,8 +13,10 @@ echo "seed=$SEED reps=$REPS" > "$RES/raw/plan.txt"
 
 bash scripts/observe-r2.sh
 
+# 대조 회차: Go 앱(서비스 app) 2회, Spring 앱(색 서비스) 2회
 for i in 1 2; do
   bash scripts/run.sh none L1 "run-control-$i"
+  bash scripts/run.sh idle S3 "run-control-spring-$i"
 done
 python3 - <<'PY' || { echo "control run failed: harness defect"; exit 3; }
 import csv, glob, sys

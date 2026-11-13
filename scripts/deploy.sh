@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# 배포 1회. 사용: deploy.sh <c0|c1|c2|c3|c3w|e1|none>. 새 버전은 v2. 종료 수준은 SHUTDOWN · STOP_GRACE · APP_GRACE 환경변수
+# 배포 1회. 사용: deploy.sh <c0|c1|c2|c3|c3w|e1|none|idle>. idle 은 색 서비스 구성의 대조 회차(배포 없음). 새 버전은 v2. 종료 수준은 SHUTDOWN · STOP_GRACE · APP_GRACE 환경변수
 source "$(dirname "$0")/lib.sh"
 mode="$1"
 export APP_VERSION=v2
 ev deploy_start
 case "$mode" in
-  none)
+  none|idle)
     ;;
   c0)
     # 지금 운영 방식: 재생성 (옛것 정지 · 제거 → 새것 생성)

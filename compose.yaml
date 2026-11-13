@@ -16,6 +16,7 @@ x-app: &app
     STARTUP_DELAY: ${STARTUP_DELAY:-0}
     SHUTDOWN: ${SHUTDOWN:-immediate}
     GRACE_TIMEOUT: ${APP_GRACE:-8}
+    SPRING_GRACE: ${SPRING_GRACE:-24h}
 
 services:
   apisix:

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 측정 1회. 사용: run.sh <c0|c1|c2|c3|c3w|e1|e3|none> <L1|L2|L3|S3> <회차 이름>
+# 측정 1회. 사용: run.sh <c0|c1|c2|c3|c3w|e1|e3|none|idle> <L1|L2|L3|S3> <회차 이름>
 #   L1 immediate, stop_grace 10s / L2 graceful, stop_grace 10s (다운로드보다 짧음) / L3 graceful, stop_grace 60s (다운로드보다 김)
 #   S3 Spring Boot 앱, graceful, timeout-per-shutdown-phase 24h · stop_grace 24h (운영과 같은 값)
 #   e3 은 c3 배포 뒤 5초 만에 c3 를 한 번 더 한다 (예외 3: 기존 컨테이너가 아직 전송 중)
@@ -70,5 +70,5 @@ wait "$STPID"
 ev window_end
 kill "$EVPID" 2>/dev/null
 cat "$OUT"/dl.* >> "$OUT/downloads.csv" 2>/dev/null; rm -f "$OUT"/dl.* "$OUT/stop"
-docker compose logs --no-color > "$OUT/compose.log" 2>&1
+docker compose logs --no-color -t > "$OUT/compose.log" 2>&1
 echo "done $name"
