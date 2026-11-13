@@ -1,0 +1,2 @@
+mode=c3w shutdown=S3 name=run-c3w-S3-4
+deploy_exit=0

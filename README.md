@@ -64,14 +64,73 @@ C2 L*  5.2s 새 색 healthy → 6.2s 노드 반영 확인 (새 요청은 새 색
 | 클라이언트 위치 | 같은 호스트의 curl 입니다. 네트워크 지연은 끊김 판정에 영향이 없습니다 |
 | APISIX 자체 교체 | 범위 밖입니다. 호스트 포트를 쥔 프로세스가 바뀌므로 앞에 다른 LB 가 필요합니다 |
 
+## 2차 측정: 운영에 넣은 방식 (C3)
+
+1차 결론(C2)은 drain 을 기다리는 방식입니다. 운영에는 기다리지 않는 방식이 들어갔습니다. 노드를 바꾸고 APISIX 로그에서 첫 `apisix.yaml reloaded` 를 보면, 기존 컨테이너에 SIGTERM 만 보내고 배포를 끝냅니다(C3). 이 방식을 따로 쟀습니다. 정의는 [연구 정의 6절](docs/research-definition.md#6-2차-측정-운영에-넣은-방식), 결과는 [results/r2/](results/r2/) 입니다.
+
+**C3 는 앱이 graceful 하고 유예가 다운로드보다 길면 끊김 0 · 새 요청 실패 0 이었습니다.** Spring Boot(Tomcat, 동기 서블릿 출력, `timeout-per-shutdown-phase` 24h)도 같았습니다.
+
+| 조합 | 회차 | 끊김 (회차 / 건) | 새 요청 실패: 다운로드 · 프로브 (회차 / 건) | 가설 |
+|---|---|---|---|---|
+| C3 × L1 Go 즉시 종료 | 5 | 5 / 97 | 0 / 0 · 0 / 0 | 맞음 |
+| C3 × L2 Go 유예 8초 | 5 | 5 / 57 | 0 / 0 · 0 / 0 | 맞음 |
+| **C3 × L3 Go 유예 55초** | 5 | **0 / 0** | **0 / 0 · 0 / 0** | 끊김 맞음, 새 요청은 「1초 안 실패 가능」 예측보다 좋음 |
+| **C3 × S3 Spring 24h** | 5 | **0 / 0** | **0 / 0 · 0 / 0** | 같음 |
+| C3w (SIGTERM 전 2초 대기) × L3 · S3 | 10 | 0 / 0 | 0 / 0 · 0 / 0 | 맞음 |
+| 예외 3 (5초 뒤 다음 배포) × L3 | 5 | 0 / 0 | 0 / 0 · 0 / 0, 두 번째 배포는 5회 모두 종료 코드 3 | 맞음 |
+| 예외 1 (APISIX 재생성) × L3 | 5 | 5 / 50 | 5 / 50 · 5 / 475 | 맞음 |
+| 대조 (Go 2 · Spring 2, 배포 없음) | 4 | 0 / 0 | 0 / 0 · 0 / 0 | 하네스 정상 |
+
+프로브는 `/version` 을 0.1초마다 요청한 것입니다. 1초에 1건인 다운로드가 놓칠 수 있는 짧은 실패 구간을 잡으려고 더했습니다.
+
+### 구간 (배포 시작 = 0초)
+
+```
+C3 L3·S3  5.6~7.0s 첫 reload 로그 확인 → 0.12~0.15s 뒤 기존 컨테이너 SIGTERM, 배포 종료
+          → 기존 컨테이너는 진행 중 다운로드를 끝까지 보내고 25~26s 에 스스로 종료 ─▶ 끊김 · 실패 0
+C3 L1     SIGTERM 즉시 종료 ─▶ 진행 중 19~20건 끊김
+C3 L2     SIGTERM + 8초 뒤 앱 유예 끝 ─▶ 남은 11~12건 끊김
+예외 3    두 번째 배포가 「다음 자리 실행 중」으로 멈춤 → 첫 배포의 기존 컨테이너는 그대로 다운로드 완주
+예외 1    APISIX 재생성: 1.0s 부터 새 요청 실패, 10.1s stop_grace(10초) 끝에 진행 중 10건 끊김
+```
+
+### 사전 관측 P7 · P8: 워커는 거의 같은 순간에 다시 읽는다
+
+| 관측 | 결과 |
+|---|---|
+| P8 쓰기 1번의 reload 로그 | 10/10 회 5줄. 워커 4개 + privileged agent 1개 (로그 pid 대조) |
+| P7 마지막 옛 버전 응답 → 첫 새 버전 응답 | 10회 모두 0.02 \~ 0.03초 (쓰기 시작 위상과 상관없음) |
+| 운영 방식 회차의 워커 4개 reload 로그 시각 | 4ms 안 |
+
+- 워커마다 1초 타이머를 따로 돌리지만(E7), 타이머가 워커 기동 때 같이 시작해 위상이 거의 같습니다.
+- 그래서 「첫 reload 로그만 보고 SIGTERM」이 남기는 창(아직 옛 노드인 워커)은 0.03초 안팎이었습니다. SIGTERM 은 그보다 늦은 0.12초 뒤라 40회 중 실패가 없었습니다.
+
+## 2차 결론
+
+1. 운영 방식(C3)은 앱이 graceful 하고 유예가 최장 다운로드보다 길면 진행 중 다운로드와 새 요청을 모두 지켰습니다. Spring Boot 3.5 Tomcat 의 graceful 종료는 동기 스트리밍 응답을 끝까지 보냈습니다.
+2. C2 와 달리 C3 의 무중단은 앱 종료 방식에 달려 있습니다. 즉시 종료(L1)나 짧은 유예(L2)에서는 C0 과 같이 끊깁니다.
+3. 새 요청 쪽 위험(워커 간 반영 시차)은 이 환경에서 0.03초였고, SIGTERM 까지 0.12초가 걸려 드러나지 않았습니다. 워커가 따로 재시작되어 타이머 위상이 어긋나면 이 창이 1초까지 커질 수 있습니다. 그 경우는 재지 않았고, 2초 대기(C3w)가 그 창을 덮습니다.
+4. 결론의 크기: 조합마다 5회, 위 구간이 매번 같은 시각에 나왔습니다. 0/5 는 「5회에서 나오지 않았다」입니다.
+
+### 2차 한계
+
+| 항목 | 내용 |
+|---|---|
+| 워커 재시작 | 워커 하나가 죽고 다시 뜨면 그 워커의 타이머 위상이 달라집니다. 재지 않았습니다 |
+| 워커 수 | 랩은 4개(CPU 4)입니다. 운영 워커 수(`worker_processes` 기본 auto = CPU 수)는 서버마다 다릅니다 |
+| Spring 앱 | 랩 앱은 같은 Boot · Java · 런타임 이미지와 같은 출력 방식이지만, 운영 앱의 필터 · 인증 · 원격 파일 읽기는 없습니다 |
+| 게이트웨이 이미지 | 공식 `apache/apisix:3.15.0-debian` 입니다. reload 로그 문구는 원전 `config_yaml.lua:198` 의 warn 입니다 |
+
 ## 재현
 
 ```bash
-# GitHub Actions 에서 (조합마다 회차 수)
-gh workflow run measure.yml -f reps=5
+# GitHub Actions 에서 (조합마다 회차 수, round 1 = 1차 · 2 = 2차)
+gh workflow run measure.yml -f reps=5 -f round=2
 # 로컬 Linux x86_64 에서 Docker 29.2.0 / Compose v5.0.2, docker-rollout v0.14 를 갖춘 뒤
 docker build -f Dockerfile.app -t lab-app:local .
-REPS=5 bash scripts/all.sh
+REPS=5 bash scripts/all.sh          # 1차
+docker build -f Dockerfile.spring -t lab-app-spring:local .
+REPS=5 bash scripts/all-r2.sh       # 2차
 ```
 
 | 경로 | 내용 |
@@ -81,5 +140,7 @@ REPS=5 bash scripts/all.sh
 | `scripts/deploy.sh` | 비교군별 배포 1회 |
 | `scripts/run.sh` · `all.sh` | 회차 1회 · 전체 측정 (사전 관측 → 대조 2회 → 무작위 순서 45회) |
 | `scripts/observe.sh` | 사전 관측 P1 \~ P6 |
-| `scripts/summarize.py` | 원시 기록 → 회차별 · 조합별 표 |
+| `scripts/summarize.py` | 원시 기록 → 회차별 · 조합별 표 (`RES=results/r2` 로 2차) |
+| `spring/` · `Dockerfile.spring` · `compose.spring.yaml` | 2차 S3 수준의 Spring Boot 앱과 색 서비스 덮어쓰기 |
+| `scripts/observe-r2.sh` · `all-r2.sh` | 2차 사전 관측 P7 · P8 · 2차 전체 측정 |
 | `results/smoke/` | 본 측정 전 하네스 검증 실행 (조합마다 1회) |
